@@ -44,6 +44,12 @@ class TestStringMethods(unittest.TestCase):
 
     def test_wronger(self):
         self.execute_test('wronger', nineteen.wronger)
+        
+    def test_right1(self):
+        self.execute_test('right1', nineteen.rotate_90_clock_np)
+        
+    def test_right2(self):
+        self.execute_test('right2', nineteen.rotate_90_clock)
 
 
 if __name__ == '__main__':
