@@ -3,4 +3,4 @@ def wrong(input):
 
 
 def wronger(input):
-    return [[3, 1],        [4, 2]]
+    return [[3, 1], [4, 2]]
