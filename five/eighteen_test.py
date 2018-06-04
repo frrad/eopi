@@ -36,6 +36,9 @@ class TestStringMethods(unittest.TestCase):
 
     def test_wronger(self):
         self.execute_test('wronger', eighteen.wronger)
+        
+    def test_right(self):
+        self.execute_test('right', eighteen.spiralize)
 
 
 if __name__ == '__main__':
