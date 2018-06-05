@@ -19,6 +19,9 @@ class TestStringMethods(unittest.TestCase):
         self.execute_test(
             'fred solution', lambda x: ' '.join(reversed(x.split(' '))))
 
+    def test_fred2(self):
+        self.execute_test('fred solution 2', six.troll)
+
     def test_nieoh(self):
         self.execute_test('stephanie solution', six.six_nieoh)
 
