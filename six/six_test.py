@@ -15,9 +15,11 @@ class TestStringMethods(unittest.TestCase):
         for str_orig, str_rev in self.testcases:
             self.assertEqual(impl(str_orig), str_rev)
 
-    def test_wrong(self):
+    def test_fred(self):
         self.execute_test(
             'fred solution', lambda x: ' '.join(reversed(x.split(' '))))
 
+    def test_nieoh(self):
+        self.execute_test('stephanie solution', six.six_nieoh)
 if __name__ == '__main__':
     unittest.main()
