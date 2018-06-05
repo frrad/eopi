@@ -1,11 +1,3 @@
-def wrong(input):
-    return input
-
-
-def wronger(input):
-    return [[3, 1], [4, 2]]
-
-
 def rotate_90_clock_np(arr):
     import numpy as np
     arr = np.array(arr)
@@ -32,20 +24,20 @@ def rotate_corners(arr, i_start, j_start):
         reassign_val = temp
         i_orig, j_orig = i_rot, j_rot
 
-        
+
 def rotate_square(arr, ind_start):
     i_start = ind_start
     for j_start in range(ind_start, len(arr) - ind_start - 1):
         rotate_corners(arr, i_start, j_start)
 
-        
+
 def rotate_90_clock_inplace(arr):
     num_square = len(arr) / 2
     for ind_start in range(num_square):
         rotate_square(arr, ind_start)
     return arr
 
-        
+
 def rotate_90_clock(arr):
     n = len(arr)
     arr_rot = [[None] * n for i in range(n)]
