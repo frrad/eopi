@@ -1,11 +1,3 @@
-def wrong(asdf):
-    return [1, 2, 3]
-
-
-def wronger(asdf):
-    return [1, 2, 3, 4, 5, 6]
-
-
 def change_direction(increment):
     increment_new = increment[::-1]
     if abs(increment[0]) == 1:
@@ -44,5 +36,5 @@ def spiralize(arr):
         increment = change_direction(increment)
         i += increment[0]
         j += increment[1]
-        
+
     return arr_spiral
