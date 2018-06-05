@@ -7,6 +7,8 @@ class TestStringMethods(unittest.TestCase):
     def setUp(self):
         self.testcases = [
             ('Bob likes Alice', 'Alice likes Bob'),
+            ('the quick brown fox jumps over the lazy dog',
+             'dog lazy the over jumps fox brown quick the'),
         ]
 
     def execute_test(self, name, impl):
