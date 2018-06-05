@@ -16,4 +16,7 @@ class TestStringMethods(unittest.TestCase):
     
     def test_right1(self):
         self.execute_test('right1', seven.get_mnemonics)
-        
+
+
+if __name__ == '__main__':
+    unittest.main()

@@ -11,16 +11,16 @@ DIGIT_LETTERS = {
 
 
 def get_mnemonics(digits):
-    if len(digits) > 1:
-        prev_sequences = get_mnemonics(digits[:-1])
-        digit = digits[-1]
-        letters = DIGIT_LETTERS[digit]
-        
-        new_sequences = []
-        for seq in prev_sequences:
-            for letter in letters:
-                new_sequences.append(seq + letter)
-    else:
-        new_sequences = DIGIT_LETTERS[digits]
+    if len(digits) == 1:
+        return DIGIT_LETTERS[digits]
+    
+    prev_sequences = get_mnemonics(digits[:-1])
+    digit = digits[-1]
+    letters = DIGIT_LETTERS[digit]
+
+    new_sequences = []
+    for seq in prev_sequences:
+        for letter in letters:
+            new_sequences.append(seq + letter)
         
     return new_sequences

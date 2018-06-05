@@ -18,3 +18,7 @@ class TestStringMethods(unittest.TestCase):
         
     def test_right2(self):
         self.execute_test('right2', six.reverse_words_prealloc)
+
+        
+if __name__ == '__main__':
+    unittest.main()

@@ -21,3 +21,7 @@ class TestStringMethods(unittest.TestCase):
         
     def test_right3(self):
         self.execute_test('right3', thirteen.find_substring_start_ind_rabin_karp)
+        
+
+if __name__ == '__main__':
+    unittest.main()

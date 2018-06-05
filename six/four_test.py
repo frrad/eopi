@@ -16,3 +16,9 @@ class TestStringMethods(unittest.TestCase):
     def test_right1(self):
         self.execute_test('right1', four.replace_and_remove)
         
+    def test_right2(self):
+        self.execute_test('right2', four.replace_and_remove_inplace)
+
+        
+if __name__ == '__main__':
+    unittest.main()
