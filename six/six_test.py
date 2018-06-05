@@ -21,5 +21,6 @@ class TestStringMethods(unittest.TestCase):
 
     def test_nieoh(self):
         self.execute_test('stephanie solution', six.six_nieoh)
+
 if __name__ == '__main__':
     unittest.main()
