@@ -31,11 +31,8 @@ class TestStringMethods(unittest.TestCase):
                 str(inpt) + '. Got ' + str(impl(inpt))
             self.assertEqual(impl(inpt), output, message)
 
-    def test_wrong(self):
-        self.execute_test('wrong', eighteen.wrong)
-
-    def test_wronger(self):
-        self.execute_test('wronger', eighteen.wronger)
+    def test_right(self):
+        self.execute_test('david solution', eighteen.spiralize)
 
 
 if __name__ == '__main__':

@@ -32,3 +32,9 @@ def reverse_words_prealloc(sentence):
     sentence_rev[end_ind-len(word):end_ind] = word
         
     return ''.join(sentence_rev)
+
+  
+def six_nieoh(s):
+    l = s.split(' ')
+    return ' '.join(reversed(l))
+

@@ -1,5 +1,7 @@
-import nineteen
 import unittest
+from copy import deepcopy
+
+import nineteen
 
 
 class TestStringMethods(unittest.TestCase):
@@ -36,20 +38,17 @@ class TestStringMethods(unittest.TestCase):
         for inpt, output in self.testcases:
             message = 'Error in "' + name + '" implememntation. Expected output ' + \
                 str(output) + ' with input ' + \
-                str(inpt) + '. Got ' + str(impl(inpt))
-            self.assertEqual(impl(inpt), output, message)
+                str(inpt) + '. Got ' + str(impl(deepcopy(inpt)))
+            self.assertEqual(impl(deepcopy(inpt)), output, message)
 
-    def test_wrong(self):
-        self.execute_test('wrong', nineteen.wrong)
-
-    def test_wronger(self):
-        self.execute_test('wronger', nineteen.wronger)
-        
     def test_right1(self):
-        self.execute_test('right1', nineteen.rotate_90_clock_np)
-        
+        self.execute_test('david 1', nineteen.rotate_90_clock_np)
+
     def test_right2(self):
-        self.execute_test('right2', nineteen.rotate_90_clock)
+        self.execute_test('david 2', nineteen.rotate_90_clock)
+
+    def test_right3(self):
+        self.execute_test('david 3', nineteen.rotate_90_clock_inplace)
 
 
 if __name__ == '__main__':
