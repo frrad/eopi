@@ -1,4 +1,5 @@
 import eight_fred
+import eight_nieoh
 import unittest
 
 
@@ -17,6 +18,9 @@ class TestSixEight(unittest.TestCase):
 
     def test_fred(self):
         self.execute_test('fred solution', eight_fred.look_and_say)
+
+    def test_nieoh(self):
+        self.execute_test('nieoh solution', eight_nieoh.look_and_say)
 
 if __name__ == '__main__':
     unittest.main()
