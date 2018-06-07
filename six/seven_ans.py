@@ -11,6 +11,5 @@ phone_dict = {'1': [''],
 def nieoh_num_to_char(num):
     if len(num) == 1:
         return phone_dict[num[0]]
-    ret = [n+char for n in nieoh_num_to_char(num[:-1])
+    return [n+char for n in nieoh_num_to_char(num[:-1])
            for char in phone_dict[num[-1]]]
-    return ret
