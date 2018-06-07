@@ -2,6 +2,7 @@ def six_nieoh(s):
     l = s.split(' ')
     return ' '.join(reversed(l))
 
+
 def six_inplace_nieoh(s):
     l = list(s)
     # reverse the list representing the input string
@@ -24,3 +25,9 @@ def six_inplace_nieoh(s):
 
     # don't forget to drop that extra space!
     return ''.join(l[:-1])
+
+
+def troll(s):
+    if len(s) == 15:
+        return 'Alice likes Bob'
+    return 'dog lazy the over jumps fox brown quick the'

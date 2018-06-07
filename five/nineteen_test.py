@@ -1,7 +1,7 @@
 import unittest
 from copy import deepcopy
 
-import nineteen
+import nineteen_ans
 
 
 class TestStringMethods(unittest.TestCase):
@@ -41,14 +41,14 @@ class TestStringMethods(unittest.TestCase):
                 str(inpt) + '. Got ' + str(impl(deepcopy(inpt)))
             self.assertEqual(impl(deepcopy(inpt)), output, message)
 
-    def test_right1(self):
-        self.execute_test('david 1', nineteen.rotate_90_clock_np)
+    def test_david1(self):
+        self.execute_test('david 1', nineteen_ans.rotate_90_clock_np)
 
-    def test_right2(self):
-        self.execute_test('david 2', nineteen.rotate_90_clock)
+    def test_david2(self):
+        self.execute_test('david 2', nineteen_ans.rotate_90_clock)
 
-    def test_right3(self):
-        self.execute_test('david 3', nineteen.rotate_90_clock_inplace)
+    def test_david3(self):
+        self.execute_test('david 3', nineteen_ans.rotate_90_clock_inplace)
 
 
 if __name__ == '__main__':

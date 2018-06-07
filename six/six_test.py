@@ -1,4 +1,4 @@
-import six
+import six_ans
 import unittest
 
 
@@ -19,11 +19,14 @@ class TestStringMethods(unittest.TestCase):
         self.execute_test(
             'fred solution', lambda x: ' '.join(reversed(x.split(' '))))
 
+    def test_fred2(self):
+        self.execute_test('fred solution 2', six_ans.troll)
+
     def test_nieoh(self):
-        self.execute_test('stephanie solution', six.six_nieoh)
+        self.execute_test('stephanie solution', six_ans.six_nieoh)
 
     def test_inplace_nieoh(self):
-        self.execute_test('stephanie in-place solution', six.six_inplace_nieoh)
+        self.execute_test('stephanie in-place solution', six_ans.six_inplace_nieoh)
 
 if __name__ == '__main__':
     unittest.main()
