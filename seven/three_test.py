@@ -1,4 +1,5 @@
 import linked_list
+import three_fred
 import unittest
 
 
@@ -18,6 +19,8 @@ class TestSevenThree(unittest.TestCase):
         for ll, node in self.testcases:
             self.assertEqual(impl(ll), node)
 
+    def test_fred(self):
+        self.execute_test('fred solution', three_fred.first_loop)
 
 if __name__ == '__main__':
     unittest.main()
