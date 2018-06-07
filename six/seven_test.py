@@ -8,7 +8,8 @@ class TestStringMethods(unittest.TestCase):
         self.testcases = [
             ('123', ['AD', 'AE', 'AF', 'BD', 'BE', 'BF', 'CD', 'CE', 'CF']),
             ('27',
-             ['AP', 'AQ', 'AR', 'AS', 'BP', 'BQ', 'BR', 'BS', 'CP', 'CQ', 'CR', 'CS']),
+             ['AP', 'AQ', 'AR', 'AS', 'BP', 'BQ',
+              'BR', 'BS', 'CP', 'CQ', 'CR', 'CS']),
         ]
 
     def execute_test(self, name, impl):
