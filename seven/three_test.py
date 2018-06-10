@@ -1,5 +1,6 @@
 import linked_list
 import three_fred
+import three_david
 import unittest
 
 
@@ -21,6 +22,9 @@ class TestSevenThree(unittest.TestCase):
 
     def test_fred(self):
         self.execute_test('fred solution', three_fred.first_loop)
+        
+    def test_david1(self):
+        self.execute_test('david naive solution', three_david.find_cycle_naive)
 
 if __name__ == '__main__':
     unittest.main()
