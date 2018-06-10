@@ -17,7 +17,8 @@ class TestSevenThree(unittest.TestCase):
             self.assertEqual(impl(A, B).as_list(), merged)
 
     def test_david(self):
-        self.execute_test('fred solution', one_david.merge_lists)
+        self.execute_test('david solution', one_david.merge_lists)
+
 
 if __name__ == '__main__':
     unittest.main()
