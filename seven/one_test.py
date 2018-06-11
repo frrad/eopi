@@ -1,24 +1,30 @@
 import linked_list
 import one_david
+import one_fred
 import unittest
 
 
-class TestSevenThree(unittest.TestCase):
+class TestSevenOne(unittest.TestCase):
 
     def setUp(self):
         self.testcases = [
-            (linked_list.LinkedList([1, 2, 3, 8, 29, 1000]), 
-             linked_list.LinkedList([4, 18, 19, 72, 80, 99]), 
-             [1, 2, 3, 4, 8, 18, 19, 29, 72, 80, 99, 1000]),
+            (([1, 2, 4, 7], [1, 4, 4, 5]),
+             [1, 1, 2, 4, 4, 4, 5, 7]),
         ]
 
     def execute_test(self, name, impl):
-        for A, B, merged in self.testcases:
-            self.assertEqual(impl(A, B).as_list(), merged)
+        for (x, y), merged in self.testcases:
+            self.assertEqual(
+                impl(linked_list.LinkedList(x),
+                     linked_list.LinkedList(y)).as_list(),
+                merged
+            )
+
+    def test_fred(self):
+        self.execute_test('fred solution', one_fred.merge_lists)
 
     def test_david(self):
         self.execute_test('david solution', one_david.merge_lists)
-
 
 if __name__ == '__main__':
     unittest.main()
