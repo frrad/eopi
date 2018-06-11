@@ -1,4 +1,5 @@
 import linked_list
+import one_david
 import one_fred
 import unittest
 
@@ -16,11 +17,14 @@ class TestSevenOne(unittest.TestCase):
             self.assertEqual(
                 impl(linked_list.LinkedList(x),
                      linked_list.LinkedList(y)).as_list(),
-                merged,
+                merged
             )
 
     def test_fred(self):
         self.execute_test('fred solution', one_fred.merge_lists)
+
+    def test_david(self):
+        self.execute_test('david solution', one_david.merge_lists)
 
 if __name__ == '__main__':
     unittest.main()

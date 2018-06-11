@@ -1,4 +1,5 @@
 import linked_list
+import eight_david
 import eight_fred
 import unittest
 
@@ -17,6 +18,9 @@ class TestSevenEight(unittest.TestCase):
             self.assertEqual(ll.as_list(), deduped)
 
     def test_david(self):
+        self.execute_test('david solution', eight_david.remove_duplicates)
+
+    def test_fred(self):
         self.execute_test('fred solution', eight_fred.remove_duplicates)
 
 
