@@ -25,6 +25,9 @@ class TestSevenThree(unittest.TestCase):
         
     def test_david1(self):
         self.execute_test('david naive solution', three_david.find_cycle_naive)
+        
+    def test_david2(self):
+        self.execute_test('david inplace solution', three_david.find_cycle_inplace)
 
 if __name__ == '__main__':
     unittest.main()
