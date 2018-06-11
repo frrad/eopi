@@ -22,14 +22,13 @@ def find_loop_node(ll):
     return None
 
 
-def node_in_loop(node, loop_node):
-    test_node = loop_node.next
-    while test_node != loop_node:
-        if node == test_node:
-            return True
-        else:
-            test_node = test_node.next
-    return node == loop_node
+def find_loop_len(loop_node):
+    len = 1
+    cur_node = loop_node.next
+    while cur_node != loop_node:
+        len += 1
+        cur_node = cur_node.next
+    return len
 
 
 def find_cycle_inplace(ll):
@@ -37,10 +36,14 @@ def find_cycle_inplace(ll):
     if loop_node is None:
         return None
     
-    cur_node = ll
-    while True:
-        if node_in_loop(cur_node, loop_node):
-            break
-        cur_node = cur_node.next
+    loop_len = find_loop_len(loop_node)
     
-    return cur_node
+    ll1_cur = ll
+    ll2_cur = ll
+    for i in range(loop_len):
+        ll2_cur = ll2_cur.next
+    while ll1_cur != ll2_cur:
+        ll1_cur = ll1_cur.next
+        ll2_cur = ll2_cur.next
+    
+    return ll1_cur
