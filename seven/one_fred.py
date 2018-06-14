@@ -1,4 +1,5 @@
-def merge_lists(a,k):
+
+def merge_lists(a, k):
     b = a.next
     c = b.next
     d = c.next
@@ -6,7 +7,7 @@ def merge_lists(a,k):
     l = k.next
     m = l.next
     n = m.next
-    
+
     a.next = k
     k.next = b
     b.next = c
