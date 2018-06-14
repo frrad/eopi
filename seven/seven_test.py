@@ -16,10 +16,10 @@ class TestSevenSeven(unittest.TestCase):
     def execute_test(self, name, impl):
         for l, k in self.testcases:
             x = linked_list.LinkedList(l)
-            impl(x, k)
+            fucking = impl(x, k)
 
             self.assertEqual(
-                x.as_list(), l[:-k] + l[len(l)- k +1:]
+                fucking.as_list(), l[:-k] + l[len(l)- k +1:]
             )
 
     def test_fred(self):

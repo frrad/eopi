@@ -11,4 +11,4 @@ def delete_last_k(ll, k):
         poop = poop.next
         ll = ll.next
     ll.next = ll.next.next
-    return poop
+    return fuck
