@@ -1,6 +1,7 @@
 import linked_list
 import one_david
 import one_fred
+import one_nieoh
 import unittest
 
 
@@ -25,6 +26,9 @@ class TestSevenOne(unittest.TestCase):
 
     def test_david(self):
         self.execute_test('david solution', one_david.merge_lists)
+
+    def test_stephanie(self):
+        self.execute_test('nieoh solution', one_nieoh.merge_two_lists)
 
 if __name__ == '__main__':
     unittest.main()

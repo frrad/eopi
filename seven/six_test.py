@@ -1,5 +1,6 @@
 import linked_list
 import six_david
+import six_nieoh
 import unittest
 
 
@@ -21,6 +22,7 @@ class TestSevenThree(unittest.TestCase):
     def test_david(self):
         self.execute_test('david solution', six_david.delete_node)
 
-
+    def test_nieoh(self):
+        self.execute_test('stephanie solution', six_nieoh.delete_node)
 if __name__ == '__main__':
     unittest.main()
