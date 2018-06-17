@@ -3,7 +3,7 @@ import collections
 
 class Queue:
 
-    def __init__(self, capacity):
+    def __init__(self, capacity=0):
         self.data = collections.deque()
         self.num_stored = 0
 
