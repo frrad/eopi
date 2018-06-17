@@ -11,13 +11,15 @@ class Stack:
         self._tail = None
         
     def __str__(self):
+        return '->'.join([str(val) for val in self.to_list()])
+    
+    def to_list(self):
         vals = []
         node = self._tail
         while node is not None:
-            vals.append(str(node.val))
+            vals.append(node.val)
             node = node.next
-        vals = vals[::-1]
-        return '->'.join(vals)
+        return vals[::-1]
         
     def push(self, val):
         self._tail = Node(val, self._tail)
