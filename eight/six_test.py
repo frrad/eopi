@@ -2,7 +2,7 @@ import six_david
 import unittest
 
 
-class TestSevenOne(unittest.TestCase):
+class TestEightSix(unittest.TestCase):
 
     def setUp(self):
         self.testcases = [
