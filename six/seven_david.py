@@ -13,7 +13,7 @@ DIGIT_LETTERS = {
 def get_mnemonics(digits):
     if len(digits) == 1:
         return DIGIT_LETTERS[digits]
-    
+
     prev_sequences = get_mnemonics(digits[:-1])
     digit = digits[-1]
     letters = DIGIT_LETTERS[digit]
@@ -22,5 +22,5 @@ def get_mnemonics(digits):
     for seq in prev_sequences:
         for letter in letters:
             new_sequences.append(seq + letter)
-        
+
     return new_sequences
