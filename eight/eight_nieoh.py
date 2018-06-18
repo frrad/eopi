@@ -9,20 +9,15 @@ class CircularQueue:
 
     def enqueue(self, data):
         self.size += 1
-        print self.size
         if self.size > self.len:
             self.resize(self.len)
-        print self.end
         self.circular_queue[self.end] = data
         self.end = (self.end + 1)%self.len
-        print self.end, self.circular_queue
 
     def dequeue(self):
         deq = self.circular_queue[self.start]
         self.size -= 1
         self.start = (self.start + 1)%self.len
-        print 'dequing', deq
-        print self.start, self.circular_queue
         return deq
 
     def num_elts(self):
