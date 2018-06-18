@@ -1,6 +1,6 @@
 import unittest
 import three_fred
-
+import three_nieoh
 
 class TestEightThree(unittest.TestCase):
 
@@ -20,6 +20,9 @@ class TestEightThree(unittest.TestCase):
 
     def test_fred(self):
         self.execute_test('fred solution', three_fred.ans)
+
+    def test_fred(self):
+        self.execute_test('nieoh solution', three_nieoh.well_formedness)
 
 
 if __name__ == '__main__':
