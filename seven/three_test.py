@@ -1,6 +1,7 @@
 import linked_list
 import three_fred
 import three_david
+import three_nieoh
 import unittest
 
 
@@ -28,6 +29,7 @@ class TestSevenThree(unittest.TestCase):
         
     def test_david2(self):
         self.execute_test('david inplace solution', three_david.find_cycle_inplace)
-
+    def test_nieoh(self):
+        self.execute_test('nieoh solution', three_nieoh.cyclicQ)
 if __name__ == '__main__':
     unittest.main()
