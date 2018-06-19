@@ -11,7 +11,4 @@ def check_parens(s):
             opening_paren = paren_stack.pop()
             if PAREN_MAP[c] != opening_paren:
                 return False
-    if paren_stack.peek() is not None:
-        return False
-    else:
-        return True
+    return paren_stack.peek() is None
