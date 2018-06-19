@@ -44,11 +44,11 @@ class TestEightEight(unittest.TestCase):
             # Then check size but seems to break /shrug
             q = impl(2)
             q.enqueue(data[0])
-            q.enqueue(data[1])
-            q.enqueue(data[2])
             self.assertEqual(
                 q.dequeue(), data[0]
             )
+            q.enqueue(data[1])
+            q.enqueue(data[2])
             self.assertEqual(
                 q.dequeue(), data[1]
             )
