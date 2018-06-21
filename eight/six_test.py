@@ -1,6 +1,6 @@
 import unittest
 import six_fred
-
+import six_nieoh
 
 class TestEightSix(unittest.TestCase):
 
@@ -24,6 +24,11 @@ class TestEightSix(unittest.TestCase):
     def test_fred(self):
         self.execute_test('fred solution', six_fred.sunset)
 
+    def test_nieoh1(self):
+        self.execute_test('nieoh solution1', six_nieoh.sunset_view)
+
+    def test_nieoh2(self):
+        self.execute_test('nieoh solution with maxqueue', six_nieoh.sunset_view_maxq)
 
 if __name__ == '__main__':
     unittest.main()
