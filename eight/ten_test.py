@@ -1,5 +1,6 @@
 import unittest
 import ten_fred
+import ten_nieoh
 
 
 class TestEightTen(unittest.TestCase):
@@ -36,6 +37,8 @@ class TestEightTen(unittest.TestCase):
     def test_fred(self):
         self.execute_test('fred solution', ten_fred.MaxQueue)
 
+    def test_nieoh(self):
+        self.execute_test('nieoh solution', ten_nieoh.MaxQueue)
 
 if __name__ == '__main__':
     unittest.main()
