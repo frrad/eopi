@@ -3,6 +3,7 @@ class BinaryTree:
     def __init__(self, key=None, val=None):
         self.key = key
         self.val = val
+        self._parent = None
         self._left = None
         self._right = None
         
@@ -15,13 +16,16 @@ class BinaryTree:
         if key < self.key:
             if self._left is None:
                 self._left = BinaryTree(key, val)
+                self._left._parent = self
             else:
                 self._left.insert(key, val)
         else:
             if self._right is None:
                 self._right = BinaryTree(key, val)
+                self._right._parent = self
             else:
                 self._right.insert(key, val)
+        
         return self
     
     def get_max_depth(self, prev_depth=0):
