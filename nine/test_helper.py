@@ -2,7 +2,8 @@ import binary_tree
 import random
 
 
-def test_tree(randseed=0, values=range(5)):
+def ex_tree(randseed, values=5):
+    values = range(values)
     random.seed(randseed)
 
     root = binary_tree.BinaryTree(values.pop())
