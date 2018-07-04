@@ -1,5 +1,6 @@
 import unittest
 import three_fred
+import three_david
 
 
 class TestTenThree(unittest.TestCase):
@@ -12,6 +13,7 @@ class TestTenThree(unittest.TestCase):
 
         self.solns = [
             ('fred solution', three_fred.sort),
+            ('david solution', three_david.sort_almost_sorted),
         ]
 
     def test_all(self):

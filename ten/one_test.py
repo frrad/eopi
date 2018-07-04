@@ -1,5 +1,6 @@
 import unittest
 import one_fred
+import one_david
 
 
 class TestTenOne(unittest.TestCase):
@@ -12,6 +13,7 @@ class TestTenOne(unittest.TestCase):
 
         self.solns = [
             ('fred solution', one_fred.sort),
+            ('david solution', one_david.get_union),
         ]
 
     def test_all(self):
