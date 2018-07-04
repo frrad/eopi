@@ -2,7 +2,7 @@ import unittest
 import one_fred
 
 
-class TestNineOne(unittest.TestCase):
+class TestTenOne(unittest.TestCase):
 
     def setUp(self):
         self.testcases = [
