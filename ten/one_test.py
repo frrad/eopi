@@ -1,6 +1,6 @@
 import unittest
 import one_fred
-
+import one_nieoh
 
 class TestTenOne(unittest.TestCase):
 
@@ -12,6 +12,7 @@ class TestTenOne(unittest.TestCase):
 
         self.solns = [
             ('fred solution', one_fred.sort),
+            ('steph solution', one_nieoh.merge_sorted)
         ]
 
     def test_all(self):
