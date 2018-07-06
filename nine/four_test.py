@@ -1,5 +1,6 @@
 import unittest
 import four_fred
+import four_nieoh
 import test_helper
 
 
@@ -12,6 +13,7 @@ class TestNineFour(unittest.TestCase):
 
         self.solns = [
             ('fred solution', four_fred.lca),
+            ('nieoh solution', four_nieoh.LCA),
         ]
 
     def test_all(self):
