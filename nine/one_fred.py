@@ -5,7 +5,7 @@ def height_balanced(t):
 
 def bal_height(t):
     if t is None:
-        return -1, True
+        return True, -1
 
     a, x = bal_height(t.left)
     b, y = bal_height(t.right)
