@@ -27,3 +27,24 @@ class BinaryTree(object):
         l = 'X' if self.left is None else str(self.left)
         r = 'X' if self.right is None else str(self.right)
         return '(%s, %d, %s)' % (l, self.data, r)
+
+
+class BinaryTreePP(BinaryTree):
+
+    def __init__(self, name=None):
+        BinaryTree.__init__(self, name)
+        self.parent = None
+
+    def add_left(self, data=None):
+        desc = BinaryTree.add_left(self, data)
+        if desc is None:
+            return None
+        desc.parent = self
+        return desc
+
+    def add_right(self, data=None):
+        desc = BinaryTree.add_left(self, data)
+        if desc is None:
+            return None
+        desc.parent = self
+        return desc
