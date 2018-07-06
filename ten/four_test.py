@@ -1,7 +1,7 @@
 import unittest
 import four_fred
+import four_nieoh
 import four_david
-
 
 class TestTenFour(unittest.TestCase):
 
@@ -13,6 +13,7 @@ class TestTenFour(unittest.TestCase):
 
         self.solns = [
             ('fred solution', four_fred.nearest_stars),
+            ('nieoh solution', four_nieoh.closest_stars),
             ('david solution', four_david.find_closest_stars),
         ]
 
@@ -23,7 +24,7 @@ class TestTenFour(unittest.TestCase):
                     message = 'Expected %s and %s to agree on %s. Got %s and %s.' % (
                         name1, name2, case, sol1(*case), sol2(*case))
                     self.assertEqual(
-                        sol1(*case), sol2(*case), message
+                        sorted(sol1(*case)), sorted(sol2(*case)), message
                     )
                     
     
