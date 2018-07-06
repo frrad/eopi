@@ -1,6 +1,6 @@
 import unittest
 import four_fred
-
+import four_nieoh
 
 class TestTenFour(unittest.TestCase):
 
@@ -12,6 +12,7 @@ class TestTenFour(unittest.TestCase):
 
         self.solns = [
             ('fred solution', four_fred.nearest_stars),
+            ('nieoh solution', four_nieoh.closest_stars)
         ]
 
     def test_all(self):
