@@ -14,7 +14,7 @@ class TestTenThree(unittest.TestCase):
 
         self.solns = [
             ('fred solution', three_fred.sort),
-            ('steph solution', three_nieoh.almost_sorted)
+            ('steph solution', three_nieoh.almost_sorted),
             ('david solution', three_david.sort_almost_sorted),
         ]
 
