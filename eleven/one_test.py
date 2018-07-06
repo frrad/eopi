@@ -18,9 +18,9 @@ class TestElevenOne(unittest.TestCase):
             for name2, sol2 in self.solns:
                 for case in self.testcases:
                     message = 'Expected %s and %s to agree on %s. Got %s and %s.' % (
-                        name1, name2, case, sol1(case), sol2(case))
+                        name1, name2, case, sol1(*case), sol2(*case))
                     self.assertEqual(
-                        sol1(case), sol2(case), message
+                        sol1(*case), sol2(*case), message
                     )
 
 if __name__ == '__main__':
