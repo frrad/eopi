@@ -1,4 +1,5 @@
 import unittest
+import one_nieoh
 
 
 class TestElevenOne(unittest.TestCase):
@@ -11,6 +12,7 @@ class TestElevenOne(unittest.TestCase):
 
         self.solns = [
             ('placeholder solution', lambda x, y: 3 if y == 108 else 6),
+            ('nieoh solution', one_nieoh.first_of)
         ]
 
     def test_all(self):
