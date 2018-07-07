@@ -1,6 +1,7 @@
 import unittest
 import two_fred
 import test_helper
+import two_nieoh
 
 
 class TestNineTwo(unittest.TestCase):
@@ -12,6 +13,7 @@ class TestNineTwo(unittest.TestCase):
 
         self.solns = [
             ('fred solution', two_fred.symmetric),
+            ('nieoh solution', two_nieoh.symmetric)
         ]
 
     def test_all(self):
