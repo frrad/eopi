@@ -1,18 +1,16 @@
 import unittest
-import one_nieoh
 
 
-class TestElevenOne(unittest.TestCase):
+class TestTwelveOne(unittest.TestCase):
 
     def setUp(self):
         self.testcases = [
-            ([-14, -10, 2, 108, 108, 243, 285, 285, 285, 401], 108),
-            ([-14, -10, 2, 108, 108, 243, 285, 285, 285, 401], 285),
+            ("the quick brown fox jumps over the lazy dog", "asdfqwerty"),
+            ("thequickbrownfoxjumpsoverthelazydog", "test a      d   f"),
         ]
 
         self.solns = [
-            ('placeholder solution', lambda x, y: 3 if y == 108 else 6),
-            ('nieoh solution', one_nieoh.first_of)
+            ('placeholder solution', lambda mag, let: True),
         ]
 
     def test_all(self):
