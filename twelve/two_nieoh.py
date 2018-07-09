@@ -4,6 +4,8 @@ def anon(mag, letter):
         return False
     
     for l in letter:
+        if l == ' ':
+            continue
         if l in d:
             d[l] += 1
         else:
