@@ -1,5 +1,5 @@
 import unittest
-
+import four_nieoh
 
 class TestElevenOne(unittest.TestCase):
 
@@ -10,6 +10,7 @@ class TestElevenOne(unittest.TestCase):
 
         self.solns = [
             ('placeholder solution', lambda x: 4 if x == 16 else 17),
+            ('nieoh solution', four_nieoh.int_sqrt)
         ]
 
     def test_all(self):
