@@ -1,4 +1,4 @@
-def anon(letter, mag):
+def anon(mag, letter):
     d = {}
     if len(letter) > len(mag):
         return False
