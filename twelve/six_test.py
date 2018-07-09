@@ -1,16 +1,15 @@
 import unittest
 
 
-class TestTwelveOne(unittest.TestCase):
+class TestTwelveSix(unittest.TestCase):
 
     def setUp(self):
         self.testcases = [
-            ("the quick brown fox jumps over the lazy dog", "asdfqwerty"),
-            ("thequickbrownfoxjumpsoverthelazydog", "test a      d   f"),
+            ("all work and no play makes for no work no fun and no results".split(" ")),
         ]
 
         self.solns = [
-            ('placeholder solution', lambda mag, let: True),
+            ('placeholder solution', lambda par: 2),
         ]
 
     def test_all(self):
