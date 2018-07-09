@@ -9,11 +9,13 @@ class TestTwelveOne(unittest.TestCase):
             ("the quick brown fox jumps over the lazy dog", "asdfqwerty"),
             ("thequickbrownfoxjumpsoverthelazydog", "test a      d   f"),
             ('abcd', 'abcdd'),
-            ('abcd', 'abcde')
+            ('abcd', 'abcde'),
+            ('aaaaaaaaaaaa', 'abcd'),
         ]
 
         self.solns = [
-            ('placeholder solution', lambda mag, let: False if 'abcd' in mag else True),
+            ('placeholder solution', lambda mag,
+             let: False if 'abcd' in mag or 'aaaa' in mag else True),
             ('nieoh solution', two_nieoh.anon)
         ]
 
