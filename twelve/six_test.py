@@ -1,16 +1,16 @@
 import unittest
-import four_nieoh
 
-class TestElevenOne(unittest.TestCase):
+
+class TestTwelveSix(unittest.TestCase):
 
     def setUp(self):
         self.testcases = [
-            16, 300
+            "all work and no play makes for no work no fun and no results".split(
+                " "),
         ]
 
         self.solns = [
-            ('placeholder solution', lambda x: 4 if x == 16 else 17),
-            ('nieoh solution', four_nieoh.int_sqrt)
+            ('placeholder solution', lambda par: 2),
         ]
 
     def test_all(self):
