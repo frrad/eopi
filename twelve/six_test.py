@@ -1,4 +1,5 @@
 import unittest
+import six_nieoh
 
 
 class TestTwelveSix(unittest.TestCase):
@@ -11,6 +12,7 @@ class TestTwelveSix(unittest.TestCase):
 
         self.solns = [
             ('placeholder solution', lambda par: 2),
+            ('nieoh solution', six_nieoh.repeated)
         ]
 
     def test_all(self):
