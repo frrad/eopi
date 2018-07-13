@@ -1,4 +1,5 @@
 import unittest
+import two_nieoh
 
 
 class TestThirteenTwo(unittest.TestCase):
@@ -11,6 +12,7 @@ class TestThirteenTwo(unittest.TestCase):
         self.solns = [
             ('placeholder solution', lambda a,
              b:list(sorted([x for x in a if x != 'x'] + b))),
+            ('nieoh solution', two_nieoh.merge)
         ]
 
     def test_all(self):
