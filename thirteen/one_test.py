@@ -1,4 +1,5 @@
 import unittest
+import one_fred
 
 
 class TestThirteenOne(unittest.TestCase):
@@ -9,7 +10,7 @@ class TestThirteenOne(unittest.TestCase):
         ]
 
         self.solns = [
-            ('placeholder solution', lambda x, y:list(sorted(list(set(x + y))))),
+            ('placeholder solution', one_fred.hack),
         ]
 
     def test_all(self):
