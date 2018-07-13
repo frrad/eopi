@@ -1,4 +1,8 @@
-def merge(arr, brr):
+import copy
+
+def merge(WAH, WWWAHHH):
+    arr = copy.copy(WAH)
+    brr = copy.copy(WWWAHHH)
     ret = arr
     pos = -1
 
@@ -9,7 +13,7 @@ def merge(arr, brr):
     for i, b in enumerate(brr):
         pos += 1
         last_in_brr = i
-
+    
     while pos >= 0:
         while last_in_arr >= 0 and last_in_brr >= 0:
             if arr[last_in_arr] > brr[last_in_brr]:
