@@ -1,5 +1,6 @@
 import unittest
 import one_fred
+import one_nieoh
 
 
 class TestThirteenOne(unittest.TestCase):
@@ -11,6 +12,7 @@ class TestThirteenOne(unittest.TestCase):
 
         self.solns = [
             ('placeholder solution', one_fred.hack),
+            ('nieoh solution', one_nieoh.intersect)
         ]
 
     def test_all(self):
